@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+
+<body class="has-background-light">
+    <section class="section">
+        <div class="container">
+            <form action="" class="form">
+                <h2 class="title">
+                    Регистрация
+                </h2>
+                <div class="control is-flex is-flex-direction-column mb-6">
+                    <label class="label">Вы регистрируетесь как</label>
+                    <label class="label radio">
+                        <input type="radio" name="answer">
+                        Покупатель
+                    </label>
+                    <label class="label radio ml-0">
+                        <input type="radio" name="answer">
+                        Поставщик
+                    </label>
+                </div>
+                <label class="email">Эл. почта
+                    <input class="email is-6" type="email"></label>
+                <div class="control columns is-flex is-flex-direction-column mb-6">
+                    <label class="label column">Название организации</label>
+                    <label class="text is-small column">ИП или Юр.лицо</label>
+                    <input class="input column is-3" type="text">
+                    <div class="columns column">
+                    <label class="text column is-one-fifth has-text-right mr-3">ИНН</label>
+                    <input class="column input  is-two-fifths" type="number"></div>
+                    
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
