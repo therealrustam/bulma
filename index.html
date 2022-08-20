@@ -4,8 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
+    <title>Регистрация пользователя</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script defer src="./js/main.js"></script>
 </head>
 
 <body class="has-background-light">
@@ -18,25 +19,80 @@
                 <div class="control is-flex is-flex-direction-column mb-6">
                     <label class="label">Вы регистрируетесь как</label>
                     <label class="label radio">
-                        <input type="radio" name="answer">
+                        <input type="radio" name="answer" id="buyer">
                         Покупатель
                     </label>
                     <label class="label radio ml-0">
-                        <input type="radio" name="answer">
+                        <input type="radio" name="answer" id="provider">
                         Поставщик
                     </label>
                 </div>
-                <label class="email">Эл. почта
-                    <input class="email is-6" type="email"></label>
+                <div class="columns column">
+                    <label class="email column is-one-fifth has-text-right mr-3">Эл. почта</label>
+                    <input class="email column input is-two-fifths" type="email">
+                </div>
                 <div class="control columns is-flex is-flex-direction-column mb-6">
                     <label class="label column">Название организации</label>
-                    <label class="text is-small column">ИП или Юр.лицо</label>
-                    <input class="input column is-3" type="text">
                     <div class="columns column">
-                    <label class="text column is-one-fifth has-text-right mr-3">ИНН</label>
-                    <input class="column input  is-two-fifths" type="number"></div>
-                    
+                        <label class="text column is-one-fifth has-text-right mr-3">ИП или Юр.лицо</label>
+                        <input class="column input is-two-fifths" type="text">
+                    </div>
+                    <div class="columns column">
+                        <label class="text column is-one-fifth has-text-right mr-3">ИНН</label>
+                        <input class="column input is-two-fifths" type="number">
+                    </div>
                 </div>
+                <div class="control columns is-flex is-flex-direction-column mb-6">
+                    <label class="label column">Фактический адрес</label>
+                    <div class="columns column">
+                        <label class="text column is-one-fifth has-text-right mr-3">Ваш город</label>
+                        <input class="column input is-two-fifths" type="text">
+                    </div>
+                    <div class="columns column">
+                        <label class="text column is-one-fifth has-text-right mr-3">Улица</label>
+                        <input class="column input is-2" type="text">
+                        <label class="text column has-text-right mr-3 is-1">Дом/стр.</label>
+                        <input class="column input is-2" type="text">
+                        <label class="text column has-text-right mr-3 is-1">Офис</label>
+                        <input class="column input is-1" type="text">
+                    </div>
+                    <div class="columns column">
+                        <label class="text column is-one-fifth has-text-right mr-3">Телефон</label>
+                        <input class="column input is-two-fifths" type="tel">
+                    </div>
+                    <div class="columns column" id="site-block">
+                        <label class="text column is-one-fifth has-text-right mr-3">Сайт Вашей компании</label>
+                        <input class="column input is-two-fifths" type="text">
+                    </div>
+                </div>
+                <div class="control columns is-flex is-flex-direction-column mb-6">
+                    <label class="label column">Виды деятельности</label>
+                    <div class="columns column">
+                        <label class="text column is-one-fifth has-text-right mr-3">Магазин</label>
+                        <input class="checkbox" type="checkbox">
+                    </div>
+                    <div class="columns column">
+                        <label class="text column is-one-fifth has-text-right mr-3">Региональная сеть магазинов</label>
+                        <input class="checkbox" type="checkbox">
+                    </div>
+                    <div class="columns column">
+                        <label class="text column is-one-fifth has-text-right mr-3">Федеральная сеть магазинов</label>
+                        <input class="checkbox" type="checkbox">
+                    </div>
+                    <div class="columns column">
+                        <label class="text column is-one-fifth has-text-right mr-3">Интернет-магазин</label>
+                        <input class="checkbox" type="checkbox">
+                    </div>
+                    <div class="columns column">
+                        <label class="text column is-one-fifth has-text-right mr-3">Автосервис</label>
+                        <input class="checkbox" type="checkbox">
+                    </div>
+                    <div class="columns column">
+                        <label class="text column is-one-fifth has-text-right mr-3">Прочее</label>
+                        <input class="column input is-two-fifths" type="text">
+                    </div>
+                </div>
+                <button class="button is-info" id="submit-btn" type="submit">Отправить заявку</button>
             </form>
         </div>
     </section>
